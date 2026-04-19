@@ -3,8 +3,8 @@
 import { useCallback, useMemo, useState } from "react";
 import { useDeployedContractInfo } from "../helper";
 import { useWagmiEthers } from "../wagmi/useWagmiEthers";
-import { FhevmInstance } from "@fhevm-sdk";
-import { buildParamsFromAbi, getEncryptionMethod, useFHEDecrypt, useFHEEncryption, useInMemoryStorage } from "@fhevm-sdk";
+import { FhevmInstance } from "fhevm-sdk";
+import { buildParamsFromAbi, getEncryptionMethod, useFHEDecrypt, useFHEEncryption, useInMemoryStorage } from "fhevm-sdk";
 import { ethers } from "ethers";
 import type { AllowedChainIds } from "~~/utils/helper/networks";
 import { useReadContract } from "wagmi";
